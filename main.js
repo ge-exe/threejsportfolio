@@ -29,10 +29,10 @@ pointLight.position.set(20,20,20);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
 
-const lightHelper = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(200, 50);
+//const lightHelper = new THREE.PointLightHelper(pointLight);
+//const gridHelper = new THREE.GridHelper(200, 50);
 
-scene.add(lightHelper, gridHelper);
+//scene.add(lightHelper, gridHelper);
 
 scene.add(pointLight);
 
@@ -106,8 +106,8 @@ function moveCamera() {
   ge.rotation.z += 0.01;
 
   camera.position.z = t * -0.01;
-  camera.position.x = t * -0.0002;
-  camera.position.y = t * -0.0002;
+  camera.position.x = t * -0.0005;
+  camera.position.y = t * -0.0005;
 }
 
 document.body.onscroll = moveCamera
